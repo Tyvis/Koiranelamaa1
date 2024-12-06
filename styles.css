@@ -24,7 +24,7 @@ img {
 }
 
 h1 {
-    /* otsikko tyyli */
+    /* otsikko tyyli Tervetuloa sivulla*/
     font-family: 'Lobster', cursive;
     color: #432818;
     font-size: 5rem;
@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-    /* otsikko tyyli */
+    /* otsikko tyyli Blogi sivulla*/
     font-family: 'Lobster', cursive;
     color: #432818;
     font-size: 4rem;
@@ -172,4 +172,63 @@ p {
     height: auto;
     margin: 20px auto;
     display: block;
+}
+
+.kolmas-kuva {
+    max-width: 600px;
+    height: auto;
+    margin: 30px 0;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px;
+}
+
+.contact-list h3 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    color: #432818;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+
+.contact-list {
+    font-family: 'Quicksand', sans-serif;
+    color: #6F1D1B;
+    margin: 15px;
+    font-size: 1.5rem;
+}
+
+.contact-list ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+}
+
+.contact-list li {
+    margin: 10px 0;
+    /* Add spacing between names */
+    font-size: 1.2rem;
+}
+
+.contact-list a {
+    text-decoration: none;
+    /* Remove underline */
+    color: #6F1D1B;
+    /* Match your color scheme */
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-list a:hover {
+    background-color: #BB9457;
+    /* Box appears on hover */
+    border-radius: 15px;
+    color: #99582A;
+    /* Slightly darker on hover */
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin: 3px;
+    transition: background-color 0.3s ease;
 }
