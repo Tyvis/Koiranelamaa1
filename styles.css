@@ -1,5 +1,5 @@
 body {
-    /* sivun background */
+    /* sivun background ja tyyli */
     background-color: #FFE6A7;
     font-family: 'Quicksand', sans-serif;
     color: #6F1D1B;
@@ -19,7 +19,6 @@ img {
     max-height: 300px;
     /* kuvan koko */
     object-fit: cover;
-    /* kuvan tyyli */
     margin-top: 0;
 }
 
@@ -54,8 +53,9 @@ h2 {
 }
 
 main {
-    /* tervetuloa teksti */
+    /* tervetuloa teksti etusivulla */
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     height: 20%;
@@ -71,6 +71,7 @@ p {
     color: #6F1D1B;
     font-size: 100%;
     margin: 0;
+    font-weight: bold;
 }
 
 .btn {
@@ -89,11 +90,12 @@ p {
 }
 
 .btn:hover {
+    /* linkki painikkeen korostus väri */
     background-color: #99582A;
 }
 
 .title-container {
-    /* kuvaus teksti */
+    /* kuvaus tekstit etusivulla */
     display: flex;
     /* flex-wrapilla nämä saa allekkain*/
     justify-content: center;
@@ -101,31 +103,46 @@ p {
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Quicksand', sans-serif;
-}
 
-.description-container {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 90px;
-    font-size: 20px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .title-container2 {
-    /* kuvaus teksti, blogi sivu */
+    /* blogitekstin alue */
     display: flex;
     /* flex-wrapilla nämä saa allekkain*/
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 40px;
     padding-left: 20px;
     font-family: 'Quicksand', sans-serif;
 }
 
+.blogi-target {
+    /* blogisivun kuvailu teksti */
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.btn-title {
+    /* blogi nimi otsikot */
+    font-weight: bold;
+    align-items: center;
+    font-size: 1.6rem;
+    margin: 12px;
+}
+
+.btn-description {
+    /* blogi tekstikoko */
+    font-weight: bold;
+    font-size: 88%;
+    font-weight: lighter;
+    color: #6F1D1B
+}
+
 .description-container2 {
+    /* blogi tekstikoko laajemmin */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -135,15 +152,10 @@ p {
 }
 
 .blog-entry {
+    /* blogi tekstin laatikot */
     display: flex;
     flex-direction: column;
     gap: 10px;
-}
-
-.btn-title {
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin: 0;
 }
 
 .koirakuva1 {
@@ -153,31 +165,19 @@ p {
     height: auto;
     margin-top: 10px;
     border-radius: 8px;
-    text-align: center;
 }
 
-.btn-description {
-    font-weight: 5px 0 15px;
-    font-size: 1rem;
-    color: #6F1D1B
-}
-
-.target-section {
-    /* otsikko tyyli */
-    font-family: 'Lobster', cursive;
-    color: #432818;
-    margin-bottom: 1rem;
-    background-color: #BB9457;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 100%;
-    margin-top: 5px;
-    position: relative;
+.koirakuva2 {
+    /* Blogisivun kuvailutekstien kuvat */
+    display: block;
+    max-width: 600px;
+    height: auto;
+    margin: 10px;
+    border-radius: 8px;
 }
 
 .toinen-kuva {
+    /* Tervetuloa sivulla oleva toinen kuva */
     max-width: 600px;
     height: auto;
     margin: 20px auto;
@@ -185,6 +185,7 @@ p {
 }
 
 .kolmas-kuva {
+    /* Yhteystiedot sivun corgi kuva */
     max-width: 600px;
     height: auto;
     margin: 30px 0;
@@ -194,7 +195,17 @@ p {
     box-shadow: 0 4px;
 }
 
+.yhteystieto-teksti {
+    /* Yhteystiedot sivun kuvailu teksti alue */
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Quicksand', sans-serif;
+}
+
 .contact-list h3 {
+    /* S-posti listan tyyli */
     font-family: 'Quicksand', sans-serif;
     font-size: 1.8rem;
     color: #432818;
@@ -203,6 +214,7 @@ p {
 }
 
 .contact-list {
+    /* S-posti listan tyyli */
     font-family: 'Quicksand', sans-serif;
     color: #6F1D1B;
     margin: 15px;
@@ -210,32 +222,30 @@ p {
 }
 
 .contact-list ul {
+    /* poistaa ranskalaiset viivat s.postilinkeistä */
     list-style-type: none;
-    /* Remove bullet points */
     padding: 0;
 }
 
 .contact-list li {
+    /* S-posti listan tyyli, väliä linkkeihin */
     margin: 10px 0;
-    /* Add spacing between names */
     font-size: 1.2rem;
 }
 
 .contact-list a {
+    /* S-posti listan tyyli, poistaa alleviivauksen */
     text-decoration: none;
-    /* Remove underline */
     color: #6F1D1B;
-    /* Match your color scheme */
     font-weight: bold;
     transition: color 0.3s ease;
 }
 
 .contact-list a:hover {
+    /* S-posti listan tyyli, aktivointi pallerot */
     background-color: #BB9457;
-    /* Box appears on hover */
     border-radius: 15px;
     color: #99582A;
-    /* Slightly darker on hover */
     font-size: 2rem;
     font-weight: bold;
     display: block;
