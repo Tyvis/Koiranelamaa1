@@ -54,6 +54,7 @@ h2 {
     text-align: center;
     width: 100%;
     margin-top: 6px;
+    margin-bottom: 6px;
     position: relative;
 }
 
@@ -85,7 +86,6 @@ p {
     background-color: #BB9457;
     color: #fff;
     text-decoration: none;
-    font-family: 'Quicksand', sans-serif;
     border-radius: 10px;
     font-size: 1rem;
     font-weight: bold;
@@ -127,15 +127,24 @@ p {
     /* flex-wrapilla nämä saa allekkain*/
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 10px;
     padding-left: 20px;
-    font-family: 'Quicksand', sans-serif;
+}
+
+target-section {
+    /* blogitekstin alue */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex start;
+    align-items: flex-start;
 }
 
 .blogi-target {
     /* blogisivun kuvailu teksti */
     font-size: 18px;
-    line-height: 1.7;
+    line-height: 1.6;
+    margin-top: 50px;
+    padding-top: 20px;
 }
 
 .btn-title {
@@ -149,7 +158,7 @@ p {
 .btn-description {
     /* blogi tekstikoko */
     font-weight: bold;
-    font-size: 88%;
+    font-size: 90%;
     font-weight: lighter;
     color: #6F1D1B
 }
