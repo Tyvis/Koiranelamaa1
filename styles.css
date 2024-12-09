@@ -137,13 +137,15 @@ target-section {
     flex-direction: column;
     justify-content: flex start;
     align-items: flex-start;
+    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .blogi-target {
     /* blogisivun kuvailu teksti */
     font-size: 18px;
     line-height: 1.6;
-    margin-top: 50px;
+    margin-top: 15px;
     padding-top: 20px;
 }
 
